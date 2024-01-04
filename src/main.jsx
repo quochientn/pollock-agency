@@ -43,6 +43,12 @@ const theme = createTheme({
       fontWeight: 400,
       lineHeight: 1.625,
     },
+    link: {
+      fontSize: "0.9375rem",
+      fontWeight: 500,
+      lineHeight: 1.6,
+      textTransform: "uppercase",
+    },
   },
   palette: {
     pollockAction: {
