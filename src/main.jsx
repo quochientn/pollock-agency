@@ -59,7 +59,9 @@ const theme = createTheme({
       dark: "#12022F",
       light: "#F8FAFC",
       alt: "#321370",
+      lightAlt: "#F7F5F1",
       white: "#fff",
+      grey: "#292F3A",
     },
   },
 });
