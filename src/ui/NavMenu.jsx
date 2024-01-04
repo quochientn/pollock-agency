@@ -14,7 +14,7 @@ const StyledListMenu = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 2rem;
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -25,13 +25,23 @@ const StyledNavLink = styled(NavLink)`
     font-weight: 500;
     line-height: 1.6;
     text-transform: uppercase;
-    color: #7b88a8;
+    color: var(--color-text-text);
   }
 
   &:active,
   &.active:link,
   &.active:visited {
-    color: #2d3958;
+    color: var(--color-text-heading);
+    position: relative;
+
+    &::before {
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      top: -15px;
+      left: 40%;
+      border: 5px solid var(--color-action-green);
+    }
   }
 `;
 
@@ -42,15 +52,6 @@ function NavMenu() {
         {pages.map((page) => (
           <li key={page.name}>
             <StyledNavLink to={page.path}>{page.name}</StyledNavLink>
-            {/* <Link
-              href={page.path}
-              variant="link"
-              color="pollockText.text"
-              underline="none"
-              sx={{ cursor: "pointer" }}
-            >
-              {page.name}
-            </Link> */}
           </li>
         ))}
       </StyledListMenu>

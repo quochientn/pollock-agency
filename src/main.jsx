@@ -50,24 +50,44 @@ const theme = createTheme({
       textTransform: "uppercase",
     },
   },
+
   palette: {
     pollockAction: {
-      actionBlue: "#4F77FF",
-      actionPink: "#FFC0EC",
+      actionBlue: "var(--color-action-blue)",
+      actionPink: "var(--color-action-pink)",
     },
     pollockText: {
-      heading: "#2D3958",
-      text: "#7B88A8",
-      textWhite: "#fff",
-      textGrey: "#E7E5EA",
+      heading: "var(--color-text-heading)",
+      text: "var(--color-text-text)",
+      textWhite: "var(--color-text-text-white)",
+      textGrey: "var(--color-text-text-grey)",
     },
     pollockBackground: {
-      dark: "#12022F",
-      light: "#F8FAFC",
-      alt: "#321370",
-      lightAlt: "#F7F5F1",
-      white: "#fff",
-      grey: "#292F3A",
+      dark: "var(--color-background-dark)",
+      light: "var(--color-background-light)",
+      alt: "var(--color-background-alt)",
+      lightAlt: "var(--color-background-light-alt)",
+      white: "var(--color-background-white)",
+      grey: "var(--color-background-grey)",
+    },
+  },
+
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: "buttonBig" },
+          style: {
+            padding: "0.8rem 2rem",
+            borderRadius: "5px",
+            backgroundColor: "var(--color-action-blue)",
+            color: "var(--color-text-text-white)",
+            "&:hover": {
+              backgroundColor: "var(--color-action-dark-blue)",
+            },
+          },
+        },
+      ],
     },
   },
 });
