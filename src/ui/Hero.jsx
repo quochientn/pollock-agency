@@ -51,7 +51,7 @@ function Hero() {
               design, and development across all platforms.
             </Typography>
 
-            <Box display="flex" alignItems="center" gap={1} pt={5}>
+            <Box display="flex" alignItems="center" gap={1.5} pt={5}>
               <Button variant="buttonBig">Get started</Button>
               <IconButton
                 size="large"
@@ -87,7 +87,7 @@ function Hero() {
           left: "50%",
           transform: "translateY(-50%)",
           backgroundColor: "#F9C45C",
-          "&.hover": {
+          "&:hover": {
             backgroundColor: "var(--color-action-orange)",
           },
         }}

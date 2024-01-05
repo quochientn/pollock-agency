@@ -49,7 +49,7 @@ const StyledNavLink = styled(NavLink)`
 
 function NavMenu() {
   return (
-    <Box component="nav" flexGrow={0}>
+    <Box component="nav">
       <StyledListMenu>
         {pages.map((page) => (
           <li key={page.name}>
