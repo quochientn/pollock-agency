@@ -23,13 +23,15 @@ function StyledCard({ icon, title, subTitle }) {
           p={2}
         >
           {icon}
-          <Typography variant="headline3" color="pollockText.heading">
+          <Typography variant="headline3" color="pollockText.heading" paragraph>
             {title}
           </Typography>
           <Typography
             variant="paragraph2"
             color="pollockText.text"
-            sx={{ paddingTop: "1.5rem", textAlign: "center" }}
+            align="center"
+            paragraph
+            sx={{ paddingTop: "0.5rem", marginBottom: 0 }}
           >
             {subTitle}
           </Typography>

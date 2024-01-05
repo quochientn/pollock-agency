@@ -11,10 +11,10 @@ function Partners() {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      gap={10}
+      gap={8}
       pt={6}
     >
-      <Typography variant="headline2" color="pollockText.heading">
+      <Typography variant="headline2" color="pollockText.heading" paragraph>
         Working with the most trusted brands in the industry
       </Typography>
 

@@ -12,15 +12,15 @@ function Contact() {
           display="flex"
           flexDirection="column"
           alignItems="center"
-          gap={4}
+          gap={2}
           textAlign="center"
         >
-          <Typography variant="display3" color="pollockText.heading">
+          <Typography variant="display3" color="pollockText.heading" paragraph>
             We design & develop transformative user experiences from Silicon
             Valley
           </Typography>
 
-          <Typography variant="headline3" color="pollockText.text">
+          <Typography variant="headline3" color="pollockText.text" paragraph>
             Are you ready to start your project? Contact us today and get
             started!
           </Typography>

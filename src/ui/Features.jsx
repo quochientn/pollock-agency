@@ -10,13 +10,13 @@ function Features() {
           display="flex"
           flexDirection="column"
           alignItems="center"
-          gap={4}
+          gap={2}
           textAlign="center"
         >
-          <Typography variant="display2" color="pollockText.heading">
+          <Typography variant="display2" color="pollockText.heading" paragraph>
             We design engaging digital products used by millions of people
           </Typography>
-          <Typography variant="paragraph1" color="pollockText.text">
+          <Typography variant="paragraph1" color="pollockText.text" paragraph>
             We team up with marketing departments of large companies and
             startups to deliver award‑winning websites
           </Typography>

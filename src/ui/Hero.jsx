@@ -41,12 +41,16 @@ function Hero() {
       <Container maxWidth="lg">
         <Box display="flex" gap={6} py={8}>
           <Stack justifyContent="center" spacing={4}>
-            <Typography variant="display1" color="pollockText.heading">
+            <Typography
+              variant="display1"
+              color="pollockText.heading"
+              paragraph
+            >
               Branding to fuel your growth{" "}
               <StyledGradientText>goals & ideas.</StyledGradientText>
             </Typography>
 
-            <Typography variant="paragraph1" color="pollockText.text">
+            <Typography variant="paragraph1" color="pollockText.text" paragraph>
               We're a digital product and UX agency in San Francisco. Strategy,
               design, and development across all platforms.
             </Typography>
