@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Input,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Input, Stack, Typography } from "@mui/material";
 
 function Newsletter() {
   return (
