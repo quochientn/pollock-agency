@@ -41,17 +41,21 @@ function Hero() {
       <Container maxWidth="lg">
         <Box display="flex" gap={6} py={8}>
           <Stack justifyContent="center" spacing={4}>
-            <Typography variant="display1">
+            <Typography
+              variant="display1"
+              color="pollockText.heading"
+              paragraph
+            >
               Branding to fuel your growth{" "}
               <StyledGradientText>goals & ideas.</StyledGradientText>
             </Typography>
 
-            <Typography variant="paragraph1">
+            <Typography variant="paragraph1" color="pollockText.text" paragraph>
               We're a digital product and UX agency in San Francisco. Strategy,
               design, and development across all platforms.
             </Typography>
 
-            <Box display="flex" alignItems="center" gap={1} pt={5}>
+            <Box display="flex" alignItems="center" gap={1.5} pt={5}>
               <Button variant="buttonBig">Get started</Button>
               <IconButton
                 size="large"
@@ -68,7 +72,9 @@ function Hero() {
                   }}
                 />
               </IconButton>
-              <Typography variant="link">How it works</Typography>
+              <Typography variant="link" color="pollockText.heading">
+                How it works
+              </Typography>
             </Box>
           </Stack>
 
@@ -87,7 +93,7 @@ function Hero() {
           left: "50%",
           transform: "translateY(-50%)",
           backgroundColor: "#F9C45C",
-          "&.hover": {
+          "&:hover": {
             backgroundColor: "var(--color-action-orange)",
           },
         }}
