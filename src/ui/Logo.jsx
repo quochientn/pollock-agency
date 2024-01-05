@@ -1,6 +1,6 @@
 import { Typography, Box } from "@mui/material";
 
-function Logo() {
+function Logo({ light = false }) {
   return (
     <Box display="flex" alignItems="center" gap={1}>
       <svg
@@ -32,7 +32,7 @@ function Logo() {
       </svg>
 
       <Typography
-        color="pollockText.heading"
+        color={light ? "pollockText.textWhite" : "pollockText.heading"}
         sx={{
           fontSize: "1.5rem",
           fontWeight: 600,

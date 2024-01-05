@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 

@@ -55,6 +55,12 @@ const theme = createTheme({
       fontWeight: 400,
       lineHeight: 1.625,
     },
+    paragraph3: {
+      fontSize: "0.875rem",
+      fontWeight: 400,
+      lineHeight: 1.714,
+      letterSpacing: "-0.3px",
+    },
     link: {
       fontSize: "0.9375rem",
       fontWeight: 500,
