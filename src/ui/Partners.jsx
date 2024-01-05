@@ -14,7 +14,7 @@ function Partners() {
       gap={10}
       pt={6}
     >
-      <Typography variant="headline2">
+      <Typography variant="headline2" color="pollockText.heading">
         Working with the most trusted brands in the industry
       </Typography>
 

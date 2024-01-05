@@ -32,11 +32,11 @@ function Logo() {
       </svg>
 
       <Typography
+        color="pollockText.heading"
         sx={{
           fontSize: "1.5rem",
           fontWeight: 600,
           lineHeight: 1.333,
-          color: "pollockText.heading",
         }}
       >
         Pollock
