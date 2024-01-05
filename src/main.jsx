@@ -10,58 +10,91 @@ const theme = createTheme({
     fontFamily: '"Outfit", "Roboto Mono", monospace, sans-serif',
     display1: {
       fontSize: "4.5rem",
-      fontWeight: 700,
+      fontWeight: 500,
       lineHeight: 1.083,
+      letterSpacing: "-2px",
     },
     display2: {
       fontSize: "4rem",
       fontWeight: 500,
       lineHeight: 1.125,
+      letterSpacing: "-2px",
     },
     display3: {
       fontSize: "3rem",
       fontWeight: 500,
       lineHeight: 1.167,
+      letterSpacing: "-2px",
     },
     headline1: {
       fontSize: "2.625rem",
       fontWeight: 500,
       lineHeight: 1.19,
+      letterSpacing: "-0.84px",
     },
     headline2: {
       fontSize: "2.25rem",
       fontWeight: 500,
       lineHeight: 1.278,
+      letterSpacing: "-1px",
     },
     paragraph1: {
       fontSize: "1.125rem",
       fontWeight: 400,
       lineHeight: 1.556,
+      letterSpacing: "-0.3px",
     },
     paragraph2: {
       fontSize: "1rem",
       fontWeight: 400,
       lineHeight: 1.625,
     },
+    link: {
+      fontSize: "0.9375rem",
+      fontWeight: 500,
+      lineHeight: 1.6,
+      textTransform: "uppercase",
+      letterSpacing: "-0.3px",
+    },
   },
+
   palette: {
     pollockAction: {
-      actionBlue: "#4F77FF",
-      actionPink: "#FFC0EC",
+      blue: "var(--color-action-blue)",
+      pink: "var(--color-action-pink)",
     },
     pollockText: {
-      heading: "#2D3958",
-      text: "#7B88A8",
-      textWhite: "#fff",
-      textGrey: "#E7E5EA",
+      heading: "var(--color-text-heading)",
+      text: "var(--color-text-text)",
+      textWhite: "var(--color-text-text-white)",
+      textGrey: "var(--color-text-text-grey)",
     },
     pollockBackground: {
-      dark: "#12022F",
-      light: "#F8FAFC",
-      alt: "#321370",
-      lightAlt: "#F7F5F1",
-      white: "#fff",
-      grey: "#292F3A",
+      dark: "var(--color-background-dark)",
+      light: "var(--color-background-light)",
+      alt: "var(--color-background-alt)",
+      lightAlt: "var(--color-background-light-alt)",
+      white: "var(--color-background-white)",
+      grey: "var(--color-background-grey)",
+    },
+  },
+
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: "buttonBig" },
+          style: {
+            padding: "0.8rem 2rem",
+            borderRadius: "5px",
+            backgroundColor: "var(--color-action-blue)",
+            color: "var(--color-text-text-white)",
+            "&:hover": {
+              backgroundColor: "var(--color-action-dark-blue)",
+            },
+          },
+        },
+      ],
     },
   },
 });

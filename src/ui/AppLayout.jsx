@@ -1,9 +1,12 @@
 import { Outlet } from "react-router-dom";
+import { Container } from "@mui/material";
+
+import Header from "./Header";
 
 function AppLayout() {
   return (
     <>
-      <div>header</div>
+      <Header />
 
       <main>
         <Outlet />
