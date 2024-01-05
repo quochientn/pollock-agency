@@ -1,7 +1,5 @@
-import { Box, IconButton } from "@mui/material";
+import { Box, Button, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-
-import StyledButton from "./StyledButton";
 
 function HeaderButtons() {
   return (
@@ -9,7 +7,7 @@ function HeaderButtons() {
       <IconButton size="medium">
         <SearchIcon sx={{ color: "pollockText.text", fontSize: "1.5rem" }} />
       </IconButton>
-      <StyledButton>Sign up</StyledButton>
+      <Button variant="buttonBig">Sign up</Button>
     </Box>
   );
 }

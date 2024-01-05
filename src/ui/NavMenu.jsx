@@ -15,6 +15,8 @@ const StyledListMenu = styled.ul`
   display: flex;
   align-items: center;
   gap: 2rem;
+  flex-grow: 0;
+  flex-shrink: 1;
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -47,7 +49,7 @@ const StyledNavLink = styled(NavLink)`
 
 function NavMenu() {
   return (
-    <Box component="nav">
+    <Box component="nav" flexGrow={0}>
       <StyledListMenu>
         {pages.map((page) => (
           <li key={page.name}>

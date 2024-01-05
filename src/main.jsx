@@ -10,33 +10,39 @@ const theme = createTheme({
     fontFamily: '"Outfit", "Roboto Mono", monospace, sans-serif',
     display1: {
       fontSize: "4.5rem",
-      fontWeight: 700,
+      fontWeight: 500,
       lineHeight: 1.083,
+      letterSpacing: "-2px",
     },
     display2: {
       fontSize: "4rem",
       fontWeight: 500,
       lineHeight: 1.125,
+      letterSpacing: "-2px",
     },
     display3: {
       fontSize: "3rem",
       fontWeight: 500,
       lineHeight: 1.167,
+      letterSpacing: "-2px",
     },
     headline1: {
       fontSize: "2.625rem",
       fontWeight: 500,
       lineHeight: 1.19,
+      letterSpacing: "-0.84px",
     },
     headline2: {
       fontSize: "2.25rem",
       fontWeight: 500,
       lineHeight: 1.278,
+      letterSpacing: "-1px",
     },
     paragraph1: {
       fontSize: "1.125rem",
       fontWeight: 400,
       lineHeight: 1.556,
+      letterSpacing: "-0.3px",
     },
     paragraph2: {
       fontSize: "1rem",
@@ -48,13 +54,14 @@ const theme = createTheme({
       fontWeight: 500,
       lineHeight: 1.6,
       textTransform: "uppercase",
+      letterSpacing: "-0.3px",
     },
   },
 
   palette: {
     pollockAction: {
-      actionBlue: "var(--color-action-blue)",
-      actionPink: "var(--color-action-pink)",
+      blue: "var(--color-action-blue)",
+      pink: "var(--color-action-pink)",
     },
     pollockText: {
       heading: "var(--color-text-heading)",

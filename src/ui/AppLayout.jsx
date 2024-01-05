@@ -5,7 +5,7 @@ import Header from "./Header";
 
 function AppLayout() {
   return (
-    <Container maxWidth="lg">
+    <>
       <Header />
 
       <main>
@@ -13,7 +13,7 @@ function AppLayout() {
       </main>
 
       <div>footer</div>
-    </Container>
+    </>
   );
 }
 
