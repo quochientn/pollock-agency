@@ -9,7 +9,7 @@ function Services() {
         color="pollockText.heading"
         align="center"
         paragraph
-        sx={{ marginBottom: "6rem" }}
+        sx={{ marginBottom: "5rem" }}
       >
         Explore our recent client success stories and witness our full 360
         transformations come to life
