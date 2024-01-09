@@ -44,6 +44,12 @@ const theme = createTheme({
       lineHeight: 1.455,
       letterSpacing: "-1px",
     },
+    headline4: {
+      fontSize: "1.125rem",
+      fontWeight: 500,
+      lineHeight: 1.556,
+      letterSpacing: "0.4px",
+    },
     paragraph1: {
       fontSize: "1.125rem",
       fontWeight: 400,

@@ -15,9 +15,8 @@ function FooterList({ title, array }) {
         sx={{ listStyle: "none", paddingLeft: 0 }}
       >
         {array.map((element, index) => (
-          <li>
+          <li key={index}>
             <Link
-              key={index}
               href="#"
               underline="none"
               color="pollockText.textGrey"

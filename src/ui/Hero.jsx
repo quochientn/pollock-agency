@@ -44,7 +44,7 @@ function Hero() {
             <Typography
               variant="display1"
               color="pollockText.heading"
-              paragraph
+              component="h1"
             >
               Branding to fuel your growth{" "}
               <StyledGradientText>goals & ideas.</StyledGradientText>

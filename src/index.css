@@ -22,6 +22,62 @@
   --color-background-grey: #292f3a;
 }
 
+img.products__web3 {
+  position: absolute;
+
+  &.products__web3--profile-card {
+    width: 15rem;
+    height: 10.625rem;
+    top: 2rem;
+    left: -4rem;
+  }
+
+  &.products__web3--design {
+    width: 18.75rem;
+    height: 25rem;
+    top: 35%;
+    right: -2.5rem;
+    border-radius: 20px;
+  }
+}
+
+img.products__product {
+  position: absolute;
+
+  &.products__product--chart-1 {
+    width: 20rem;
+    height: 12rem;
+    top: 3rem;
+    right: -4.5rem;
+  }
+
+  &.products__product--chart-2 {
+    width: 25rem;
+    height: 30rem;
+    top: 35%;
+    left: -8rem;
+  }
+}
+
+img.products__design {
+  position: absolute;
+
+  &.products__design--gradient {
+    width: 18.75rem;
+    height: 25rem;
+    top: 3rem;
+    right: -2.5rem;
+    border-radius: 20px;
+  }
+
+  &.products__design--chart-3 {
+    width: 18rem;
+    height: 18rem;
+    top: 64%;
+    left: -6rem;
+  }
+}
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
