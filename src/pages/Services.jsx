@@ -1,5 +1,7 @@
+import PageUpdating from "../ui/PageUpdating";
+
 function Services() {
-  return <div>Services</div>;
+  return <PageUpdating />;
 }
 
 export default Services;

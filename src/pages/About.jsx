@@ -1,5 +1,7 @@
+import PageUpdating from "../ui/PageUpdating";
+
 function About() {
-  return <div>About</div>;
+  return <PageUpdating />;
 }
 
 export default About;

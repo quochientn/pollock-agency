@@ -1,5 +1,7 @@
+import PageUpdating from "../ui/PageUpdating";
+
 function Contact() {
-  return <div>Contact</div>;
+  return <PageUpdating />;
 }
 
 export default Contact;

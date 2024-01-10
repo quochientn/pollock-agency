@@ -1,5 +1,7 @@
+import PageUpdating from "../ui/PageUpdating";
+
 function Blog() {
-  return <div>Blog</div>;
+  return <PageUpdating />;
 }
 
 export default Blog;
