@@ -5,11 +5,11 @@ function StyledCard({ icon, title, subTitle }) {
     <Card
       variant="outlined"
       sx={{
-        borderRadius: "20px",
+        borderRadius: "1.25rem",
         border:
           "1px solid (rgba(97, 119, 152, 0.20), rgba(97, 119, 152, 0.20))",
         "&:hover": {
-          border: "none",
+          border: "1px solid transparent",
           boxShadow: "0px 20px 50px 0px rgba(79, 119, 255, 0.20)",
         },
       }}
@@ -30,8 +30,9 @@ function StyledCard({ icon, title, subTitle }) {
             variant="paragraph2"
             color="pollockText.text"
             align="center"
+            mb={0}
+            pt={1}
             paragraph
-            sx={{ paddingTop: "0.5rem", marginBottom: 0 }}
           >
             {subTitle}
           </Typography>

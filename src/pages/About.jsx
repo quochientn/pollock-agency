@@ -1,7 +1,11 @@
-import PageUpdating from "../ui/PageUpdating";
+import Testimonials from "../ui/Testimonials";
 
 function About() {
-  return <PageUpdating />;
+  return (
+    <>
+      <Testimonials />
+    </>
+  );
 }
 
 export default About;

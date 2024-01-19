@@ -1,5 +1,4 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
-import shadows from "@mui/material/styles/shadows";
+import { Box } from "@mui/material";
 import {
   InsertChartOutlined,
   LayersOutlined,
