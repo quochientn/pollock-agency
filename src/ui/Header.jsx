@@ -6,10 +6,8 @@ import HeaderButtons from "./HeaderButtons";
 
 function Header() {
   return (
-    // <Box>
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" component="header">
       <Box
-        component="header"
         py={2}
         display="flex"
         alignItems="center"
@@ -23,7 +21,6 @@ function Header() {
         <HeaderButtons />
       </Box>
     </Container>
-    // </Box>
   );
 }
 
