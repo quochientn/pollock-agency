@@ -59,8 +59,8 @@ function Footer() {
             paragraph
             mb={0}
           >
-            &copy; 2022 Pollock LLC. All Rights Reserved. Terms & Conditions.
-            Privacy Policy.
+            &copy; {new Date().getFullYear()} Pollock LLC. All Rights Reserved.
+            Terms & Conditions. Privacy Policy.
           </Typography>
 
           <Box>

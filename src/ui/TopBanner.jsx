@@ -9,7 +9,7 @@ function TopBanner({ title, page }) {
       alignItems="center"
       gap={4}
       sx={{
-        width: "100vw",
+        width: "100%",
         height: "500px",
         backgroundColor: "pollockBackground.light",
         position: "relative",

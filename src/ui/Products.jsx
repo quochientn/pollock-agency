@@ -1,5 +1,6 @@
 import { Box, Button, Container, SvgIcon, Typography } from "@mui/material";
 import Grid from "@mui/system/Unstable_Grid/Grid";
+
 import GradientBackground from "./GradientBackground";
 
 function Products() {
@@ -26,7 +27,12 @@ function Products() {
             Digital products that people love to use
           </Typography>
 
-          <Typography variant="paragraph1" color="pollockText.text" paragraph>
+          <Typography
+            variant="paragraph1"
+            color="pollockText.text"
+            mb={1}
+            paragraph
+          >
             Applying behavioral science to customer experience
           </Typography>
         </Box>
