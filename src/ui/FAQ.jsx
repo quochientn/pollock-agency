@@ -45,19 +45,19 @@ function FAQ() {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ py: "6rem" }}>
+    <Container maxWidth="lg" component="section" sx={{ py: "6rem" }}>
       <Box
         display="flex"
         flexDirection="column"
         alignItems="center"
-        gap={8}
+        gap={6}
         textAlign="center"
       >
         <Typography
           variant="display2"
           color="pollockText.heading"
           component="h2"
-          mb={2}
+          mb={4}
         >
           Creating an online web presence to fit your business
         </Typography>
@@ -69,7 +69,7 @@ function FAQ() {
               onChange={handleChange(`question${i + 1}`)}
               key={question.question}
               elevation={0}
-              sx={{ border: "none", mb: "2rem" }}
+              sx={{ mb: "2rem" }}
             >
               <AccordionSummary expandIcon={<ExpandMore />}>
                 <Typography variant="headline2">{question.question}</Typography>

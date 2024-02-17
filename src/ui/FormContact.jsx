@@ -30,7 +30,7 @@ function FormContact() {
           purpose and place
         </Typography>
 
-        <Box display="flex" gap={10}>
+        <Box display="flex" gap={10} mt={6}>
           <Grid
             container
             rowSpacing={3}
