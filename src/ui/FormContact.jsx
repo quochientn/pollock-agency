@@ -1,4 +1,4 @@
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import { Box, Container, TextField, Typography } from "@mui/material";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 
 function FormContact() {
@@ -59,7 +59,6 @@ function FormContact() {
                 type="text"
                 fullWidth
                 required
-                autoFocus
                 sx={{ backgroundColor: "var(--color-background-white)" }}
               />
             </Grid>
