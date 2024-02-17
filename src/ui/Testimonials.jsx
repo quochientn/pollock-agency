@@ -22,7 +22,7 @@ function Testimonials() {
             What our clients are saying about us
           </Typography>
 
-          <Typography variant="paragraph1" color="pollockText.text" paragraph>
+          <Typography variant="headline3" color="pollockText.text" paragraph>
             Customer satisfaction is a primary goal for our company
           </Typography>
         </Box>

@@ -78,6 +78,11 @@ img.products__design {
   }
 }
 
+input[type="submit"] {
+  color: var(--color-text-text-white);
+  text-transform: uppercase;
+}
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

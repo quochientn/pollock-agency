@@ -12,10 +12,14 @@ function Contact() {
           display="flex"
           flexDirection="column"
           alignItems="center"
-          gap={2}
+          gap={4}
           textAlign="center"
         >
-          <Typography variant="display3" color="pollockText.heading" paragraph>
+          <Typography
+            variant="display3"
+            color="pollockText.heading"
+            component="h3"
+          >
             We design & develop transformative user experiences from Silicon
             Valley
           </Typography>
