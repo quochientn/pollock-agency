@@ -57,7 +57,6 @@ function FeaturesDetail() {
         alignItems="center"
         gap={4}
         textAlign="center"
-        mb={8}
       >
         <Typography
           variant="display3"
