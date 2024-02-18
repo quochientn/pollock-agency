@@ -16,9 +16,11 @@ function CTA({ title, subTitle, buttonText }) {
           textAlign="center"
         >
           <Typography
-            variant="display3"
             color="pollockText.heading"
             component="h3"
+            sx={{
+              typography: { md: "display3", sm: "headline1", xs: "headline2" },
+            }}
           >
             {title}
           </Typography>

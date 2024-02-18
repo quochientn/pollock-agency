@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import styled from "@emotion/styled";
-import { Box } from "@mui/material";
+import { Box, IconButton, styled } from "@mui/material";
+import { MenuOutlined } from "@mui/icons-material";
 
 const pages = [
   { name: "Home", path: "/" },
@@ -10,7 +10,7 @@ const pages = [
   { name: "Contact", path: "/contact" },
 ];
 
-const StyledListMenu = styled.ul`
+const StyledListMenu = styled("ul")`
   list-style: none;
   display: flex;
   align-items: center;
@@ -51,15 +51,23 @@ const StyledNavLink = styled(NavLink)`
 
 function NavMenu() {
   return (
-    <Box component="nav">
-      <StyledListMenu>
-        {pages.map((page) => (
-          <li key={page.name}>
-            <StyledNavLink to={page.path}>{page.name}</StyledNavLink>
-          </li>
-        ))}
-      </StyledListMenu>
-    </Box>
+    <>
+      <Box component="nav">
+        <StyledListMenu>
+          {pages.map((page) => (
+            <li key={page.name}>
+              <StyledNavLink to={page.path}>{page.name}</StyledNavLink>
+            </li>
+          ))}
+        </StyledListMenu>
+      </Box>
+
+      <Box display={{ md: "none" }}>
+        <IconButton>
+          <MenuOutlined sx={{ color: "pollockText.text", fontSize: "2rem" }} />
+        </IconButton>
+      </Box>
+    </>
   );
 }
 

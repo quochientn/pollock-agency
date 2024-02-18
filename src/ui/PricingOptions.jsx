@@ -6,6 +6,7 @@ import {
   CardContent,
   Typography,
   styled,
+  useTheme,
 } from "@mui/material";
 
 const StyledListOptionFeatures = styled("ul")`
@@ -50,15 +51,27 @@ const options = [
 ];
 
 function PricingOptions({ annualPrice }) {
+  const theme = useTheme();
+
   return (
     <Box
       display="flex"
+      flexDirection={{ md: "row", xs: "column" }}
       gap={6}
+      mt={2}
       sx={{
-        position: "absolute",
-        top: "calc(100% + 6rem)",
-        transform: "translateY(-50%)",
+        [theme.breakpoints.up("md")]: {
+          position: "absolute",
+          top: "calc(100% + 6rem)",
+          transform: "translateY(-50%)",
+          flexDirection: "row",
+        },
       }}
+      // sx={{
+      //   position: "absolute",
+      //   top: "calc(100% + 6rem)",
+      //   transform: "translateY(-50%)",
+      // }}
     >
       {options.map((option) => (
         <Card
@@ -96,14 +109,7 @@ function PricingOptions({ annualPrice }) {
                 }}
               >
                 $
-                <Typography
-                  sx={{
-                    typography: {
-                      md: "display2",
-                      xs: "display3",
-                    },
-                  }}
-                >
+                <Typography variant="display2">
                   {annualPrice ? option.annualPrice : option.monthlyPrice}
                 </Typography>
                 /{annualPrice ? "yr" : "mo"}
@@ -121,10 +127,13 @@ function PricingOptions({ annualPrice }) {
                         sx={{ color: "pollockAction.blue" }}
                       />
                       <Typography
-                        variant="headline3"
                         color="pollockText.heading"
+                        textAlign="left"
                         paragraph
                         mb={0}
+                        sx={{
+                          typography: { md: "headline3", xs: "headline4" },
+                        }}
                       >
                         {feature}
                       </Typography>

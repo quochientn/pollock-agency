@@ -1,6 +1,15 @@
-import { Box, Breadcrumbs, Link, SvgIcon, Typography } from "@mui/material";
+import {
+  Box,
+  Breadcrumbs,
+  Link,
+  SvgIcon,
+  Typography,
+  useTheme,
+} from "@mui/material";
 
 function TopBanner({ title, page }) {
+  const theme = useTheme();
+
   return (
     <Box
       display="flex"
@@ -17,10 +26,12 @@ function TopBanner({ title, page }) {
       component="section"
     >
       <Typography
-        variant="display3"
         color="pollockText.heading"
         component="h3"
-        sx={{ textTransform: "capitalize" }}
+        textTransform="capitalize"
+        sx={{
+          typography: { md: "display3", sm: "headline1", xs: "headline2" },
+        }}
       >
         {title}
       </Typography>
@@ -92,6 +103,9 @@ function TopBanner({ title, page }) {
           position: "absolute",
           bottom: 0,
           right: "10%",
+          [theme.breakpoints.down("md")]: {
+            display: "none",
+          },
         }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -135,6 +149,9 @@ function TopBanner({ title, page }) {
           position: "absolute",
           left: "-30%",
           bottom: 0,
+          [theme.breakpoints.down("md")]: {
+            display: "none",
+          },
         }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none">

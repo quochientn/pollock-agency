@@ -1,4 +1,5 @@
 import { Box, Container, SvgIcon } from "@mui/material";
+
 import Fact from "./Fact";
 
 const factsContent = [

@@ -25,12 +25,14 @@ function Pricing() {
           gap={4}
           textAlign="center"
           sx={{ position: "relative" }}
-          pb={35}
+          pb={{ md: 35 }}
         >
           <Typography
-            variant="display3"
             color="pollockText.heading"
             component="h3"
+            sx={{
+              typography: { md: "display3", sm: "headline1", xs: "headline2" },
+            }}
           >
             Set up your app, pick a plan later
           </Typography>

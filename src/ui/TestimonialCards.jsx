@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+
 import TestimonialCard from "./TestimonialCard";
 
 const testimonialsContent = [
@@ -27,7 +28,7 @@ const testimonialsContent = [
 
 function TestimonialCards() {
   return (
-    <Box display="flex" gap={4}>
+    <Box display="flex" flexDirection={{ md: "row", xs: "column" }} gap={4}>
       {testimonialsContent.map((testimonial) => (
         <TestimonialCard
           src={testimonial.image}

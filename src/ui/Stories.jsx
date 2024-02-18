@@ -1,5 +1,4 @@
-import { Stack, Typography } from "@mui/material";
-import { styled } from "@mui/system";
+import { Stack, Typography, styled } from "@mui/material";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 
 const StyledImg = styled("img")`

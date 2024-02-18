@@ -59,9 +59,11 @@ function FeaturesDetail() {
         textAlign="center"
       >
         <Typography
-          variant="display3"
           color="pollockText.heading"
           component="h3"
+          sx={{
+            typography: { md: "display3", sm: "headline1", xs: "headline2" },
+          }}
         >
           An outstanding strategy, design, and development across all platforms
         </Typography>
@@ -76,7 +78,12 @@ function FeaturesDetail() {
           purpose and place
         </Typography>
 
-        <Box display="flex" gap={10} mt={5}>
+        <Box
+          display="flex"
+          flexDirection={{ md: "row", xs: "column" }}
+          gap={10}
+          mt={5}
+        >
           <Grid container columnSpacing={4} rowSpacing={4}>
             {cardsContent.map((card) => (
               <Grid md={6} key={card.title}>

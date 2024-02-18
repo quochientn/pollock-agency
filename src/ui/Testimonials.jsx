@@ -15,9 +15,11 @@ function Testimonials() {
           mb={8}
         >
           <Typography
-            variant="display3"
             color="pollockText.heading"
             component="h3"
+            sx={{
+              typography: { md: "display3", sm: "headline1", xs: "headline2" },
+            }}
           >
             What our clients are saying about us
           </Typography>

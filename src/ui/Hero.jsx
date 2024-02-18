@@ -5,11 +5,11 @@ import {
   IconButton,
   Stack,
   Typography,
+  styled,
 } from "@mui/material";
-import styled from "@emotion/styled";
 import { ArrowDownward, PlayArrow } from "@mui/icons-material";
 
-const StyledImg = styled.img`
+const StyledImg = styled("img")`
   width: 100%;
 
   @media screen and (max-width: 900px) {
@@ -21,7 +21,7 @@ const StyledImg = styled.img`
   }
 `;
 
-const StyledGradientText = styled.span`
+const StyledGradientText = styled("span")`
   background: linear-gradient(
     92deg,
     var(--color-action-purple) 32.21%,

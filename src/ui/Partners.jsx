@@ -1,7 +1,7 @@
-import styled from "@emotion/styled";
-import { Box, Typography } from "@mui/material";
+// import styled from "@emotion/styled";
+import { Box, Typography, styled } from "@mui/material";
 
-const StyledImg = styled.img`
+const StyledImg = styled("img")`
   height: 2rem;
 
   @media screen and (max-width: 600px) {

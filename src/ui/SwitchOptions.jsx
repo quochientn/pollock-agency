@@ -1,4 +1,4 @@
-import { Box, Chip, Switch, Typography, styled } from "@mui/material";
+import { Box, Chip, Switch, Typography, styled, useTheme } from "@mui/material";
 
 const CustomSwitch = styled(Switch)(() => ({
   "& .MuiSwitch-switchBase.Mui-checked": {
@@ -10,6 +10,8 @@ const CustomSwitch = styled(Switch)(() => ({
 }));
 
 function SwitchOptions({ annualPrice, onChange }) {
+  const theme = useTheme();
+
   return (
     <Box
       display="flex"
@@ -25,17 +27,24 @@ function SwitchOptions({ annualPrice, onChange }) {
         Yearly
       </Typography>
 
-      <Chip
-        label="Save 20%"
-        sx={{
-          borderRadius: "5px",
-          color: "var(--color-text-text-white)",
-          backgroundColor: "var(--color-action-green)",
-          typography: "paragraph3",
-          position: "absolute",
-          right: "-50%",
-        }}
-      />
+      {annualPrice && (
+        <Chip
+          label="Save 20%"
+          sx={{
+            borderRadius: "5px",
+            color: "var(--color-text-text-white)",
+            backgroundColor: "var(--color-action-green)",
+            typography: "paragraph3",
+            position: "absolute",
+            right: "-50%",
+            [theme.breakpoints.down("sm")]: {
+              right: 0,
+              bottom: "-100%",
+              transform: "translateX(40%)",
+            },
+          }}
+        />
+      )}
     </Box>
   );
 }

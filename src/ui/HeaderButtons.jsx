@@ -3,7 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 function HeaderButtons() {
   return (
-    <Box display="flex" alignItems="center" gap={2}>
+    <Box display={{ md: "flex", xs: "none" }} alignItems="center" gap={2}>
       <IconButton size="medium">
         <SearchIcon sx={{ color: "pollockText.text", fontSize: "1.5rem" }} />
       </IconButton>

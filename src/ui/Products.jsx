@@ -20,9 +20,11 @@ function Products() {
           mb={8}
         >
           <Typography
-            variant="display3"
             color="pollockText.heading"
             component="h3"
+            sx={{
+              typography: { md: "display3", sm: "headline1", xs: "headline2" },
+            }}
           >
             Digital products that people love to use
           </Typography>

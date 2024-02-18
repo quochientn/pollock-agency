@@ -12,11 +12,13 @@ function Introduction() {
   return (
     <Container maxWidth="lg" component="section" sx={{ py: "6rem" }}>
       <Typography
-        variant="display3"
         color="pollockText.heading"
         align="center"
         component="h3"
         mb={10}
+        sx={{
+          typography: { md: "display3", sm: "headline1", xs: "headline2" },
+        }}
       >
         A design and branding agency in New York
       </Typography>

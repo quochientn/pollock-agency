@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+
 import FeaturesDetail from "../ui/FeaturesDetail";
 import Partners from "../ui/Partners";
 import Pricing from "../ui/Pricing";
@@ -11,7 +12,7 @@ function Services() {
       <TopBanner title="Our services" page="Services" />
       <FeaturesDetail />
       <Pricing />
-      <Box my={12} pt={35}>
+      <Box my={12} pt={{ md: 35 }}>
         <Partners />
       </Box>
       <Testimonials />

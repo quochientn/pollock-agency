@@ -16,9 +16,11 @@ function Contact() {
           textAlign="center"
         >
           <Typography
-            variant="display3"
             color="pollockText.heading"
             component="h3"
+            sx={{
+              typography: { md: "display3", sm: "headline1", xs: "headline2" },
+            }}
           >
             We design & develop transformative user experiences from Silicon
             Valley
