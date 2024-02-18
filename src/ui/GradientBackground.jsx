@@ -29,6 +29,11 @@ const StyledBackground = styled(Box)`
   width: 25rem;
   height: 45rem;
   position: relative;
+
+  @media screen and (max-width: 900px) {
+    width: 17rem;
+    height: 30rem;
+  }
 `;
 
 function GradientBackground({ option, children }) {

@@ -4,7 +4,13 @@ import Grid from "@mui/system/Unstable_Grid/Grid";
 
 const StyledImg = styled("img")`
   height: 500px;
+  width: auto;
   border-radius: 2.5rem;
+  object-fit: cover;
+
+  @media screen and (max-width: 900px) {
+    height: 100%;
+  }
 `;
 
 function Stories() {

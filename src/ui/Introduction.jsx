@@ -23,7 +23,16 @@ function Introduction() {
 
       <Grid container spacing={12} alignItems="center">
         <Grid md={6}>
-          <Typography variant="headline2" color="pollockText.heading" paragraph>
+          <Typography
+            color="pollockText.heading"
+            paragraph
+            sx={{
+              typography: {
+                sm: "headline2",
+                xs: "headline3",
+              },
+            }}
+          >
             SEO-focused WordPress web design and marketing agency
           </Typography>
 
@@ -47,7 +56,16 @@ function Introduction() {
           <StyledImg src="/about-2.jpg" alt="Introduction illustration" />
         </Grid>
         <Grid md={6}>
-          <Typography variant="headline2" color="pollockText.heading" paragraph>
+          <Typography
+            color="pollockText.heading"
+            paragraph
+            sx={{
+              typography: {
+                sm: "headline2",
+                xs: "headline3",
+              },
+            }}
+          >
             Branding has never been more agile than it is today
           </Typography>
 
@@ -65,7 +83,16 @@ function Introduction() {
         </Grid>
 
         <Grid md={6}>
-          <Typography variant="headline2" color="pollockText.heading" paragraph>
+          <Typography
+            color="pollockText.heading"
+            paragraph
+            sx={{
+              typography: {
+                sm: "headline2",
+                xs: "headline3",
+              },
+            }}
+          >
             We are a digital product and user experience design agency
           </Typography>
 

@@ -14,7 +14,7 @@ function Header() {
         justifyContent="space-between"
         position="absolute"
         zIndex={1}
-        width="1152px"
+        width={{ lg: "72rem", xs: "90%" }}
       >
         <Logo />
         <NavMenu />

@@ -3,6 +3,10 @@ import { Box, Typography } from "@mui/material";
 
 const StyledImg = styled.img`
   height: 2rem;
+
+  @media screen and (max-width: 600px) {
+    height: 1.5rem;
+  }
 `;
 
 function Partners() {
@@ -11,14 +15,29 @@ function Partners() {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      gap={8}
-      pt={6}
+      gap={{ md: 8, xs: 4 }}
+      pt={{ md: 6, xs: 2 }}
     >
-      <Typography variant="headline2" color="pollockText.heading" paragraph>
+      <Typography
+        color="pollockText.heading"
+        textAlign="center"
+        paragraph
+        sx={{
+          typography: {
+            sm: "headline2",
+            xs: "headline3",
+          },
+        }}
+      >
         Working with the most trusted brands in the industry
       </Typography>
 
-      <Box display="flex" alignItems="center" gap={8}>
+      <Box
+        display={{ md: "flex", xs: "grid" }}
+        alignItems="center"
+        gap={{ md: 8, xs: 12 }}
+        gridTemplateColumns="1fr 1fr"
+      >
         <StyledImg src="/google.png" alt="Google logo" />
         <StyledImg src="/netflix.png" alt="Google logo" />
         <StyledImg src="/slack.png" alt="Slack logo" />

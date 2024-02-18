@@ -86,9 +86,24 @@ function PricingOptions({ annualPrice }) {
                 {option.name}
               </Typography>
 
-              <Typography variant="headline2" color="pollockText.heading">
+              <Typography
+                color="pollockText.heading"
+                sx={{
+                  typography: {
+                    sm: "headline2",
+                    xs: "headline3",
+                  },
+                }}
+              >
                 $
-                <Typography variant="display2">
+                <Typography
+                  sx={{
+                    typography: {
+                      md: "display2",
+                      xs: "display3",
+                    },
+                  }}
+                >
                   {annualPrice ? option.annualPrice : option.monthlyPrice}
                 </Typography>
                 /{annualPrice ? "yr" : "mo"}

@@ -4,9 +4,14 @@ function Fact({ number, title, subTitle }) {
   return (
     <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
       <Typography
-        variant="display2"
         color="var(--color-action-purple)"
         component="h2"
+        sx={{
+          typography: {
+            md: "display2",
+            xs: "display3",
+          },
+        }}
       >
         {number}
       </Typography>

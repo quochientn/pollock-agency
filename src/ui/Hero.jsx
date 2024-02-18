@@ -9,11 +9,16 @@ import {
 import styled from "@emotion/styled";
 import { ArrowDownward, PlayArrow } from "@mui/icons-material";
 
-const HERO_ASPECT_RATIO = 485 / 570;
-
 const StyledImg = styled.img`
-  width: 450px;
-  height: ${450 / HERO_ASPECT_RATIO}px;
+  width: 100%;
+
+  @media screen and (max-width: 900px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
 `;
 
 const StyledGradientText = styled.span`
@@ -34,17 +39,27 @@ function Hero() {
       py={6}
       sx={{
         backgroundColor: "pollockBackground.lightAlt",
-        height: "95vh",
+        height: { md: "95vh" },
         position: "relative",
       }}
     >
       <Container maxWidth="lg">
-        <Box display="flex" gap={6} py={8}>
+        <Box
+          display="flex"
+          flexDirection={{ md: "row", xs: "column-reverse" }}
+          gap={6}
+          py={8}
+        >
           <Stack justifyContent="center" spacing={4}>
             <Typography
-              variant="display1"
               color="pollockText.heading"
               component="h1"
+              sx={{
+                typography: {
+                  md: "display2",
+                  xs: "display3",
+                },
+              }}
             >
               Branding to fuel your growth{" "}
               <StyledGradientText>goals & ideas.</StyledGradientText>
@@ -78,7 +93,7 @@ function Hero() {
             </Box>
           </Stack>
 
-          <Box>
+          <Box textAlign="center">
             <StyledImg src="/hero.png" alt="hero" />
           </Box>
         </Box>

@@ -8,8 +8,18 @@ function Error() {
       alignItems="center"
       gap={2}
       mt={20}
+      px={2}
     >
-      <Typography variant="display1" color="pollockText.heading" component="h1">
+      <Typography
+        color="pollockText.heading"
+        component="h1"
+        sx={{
+          typography: {
+            md: "display2",
+            xs: "display3",
+          },
+        }}
+      >
         Something went wrong
       </Typography>
 

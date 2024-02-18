@@ -15,6 +15,10 @@ const StyledListMenu = styled.ul`
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`

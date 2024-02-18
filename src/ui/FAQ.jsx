@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { ExpandMore } from "@mui/icons-material";
 import {
   Accordion,
@@ -72,7 +71,16 @@ function FAQ() {
               sx={{ mb: "2rem" }}
             >
               <AccordionSummary expandIcon={<ExpandMore />}>
-                <Typography variant="headline2">{question.question}</Typography>
+                <Typography
+                  sx={{
+                    typography: {
+                      sm: "headline2",
+                      xs: "headline3",
+                    },
+                  }}
+                >
+                  {question.question}
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography variant="paragraph1">{question.answer}</Typography>

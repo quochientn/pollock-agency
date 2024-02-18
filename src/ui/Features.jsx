@@ -1,4 +1,5 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
+
 import Partners from "./Partners";
 import FeaturedCards from "./FeaturedCards";
 
@@ -14,9 +15,14 @@ function Features() {
           textAlign="center"
         >
           <Typography
-            variant="display2"
             color="pollockText.heading"
             component="h2"
+            sx={{
+              typography: {
+                md: "display2",
+                xs: "display3",
+              },
+            }}
           >
             We design engaging digital products used by millions of people
           </Typography>

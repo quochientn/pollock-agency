@@ -96,9 +96,14 @@ function FeaturesDetail() {
             textAlign="left"
           >
             <Typography
-              variant="headline2"
               color="pollockText.heading"
               paragraph
+              sx={{
+                typography: {
+                  sm: "headline2",
+                  xs: "headline3",
+                },
+              }}
             >
               We fuel the growth of purpose driven brands through strategy
               design empowerment, and market adoption.

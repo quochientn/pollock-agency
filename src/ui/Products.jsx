@@ -37,8 +37,14 @@ function Products() {
           </Typography>
         </Box>
 
-        <Grid container rowSpacing={18} columnSpacing={2} alignItems="center">
-          <Grid md={6}>
+        <Grid
+          container
+          rowSpacing={{ md: 18, xs: 10 }}
+          columnSpacing={2}
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Grid md={6} xs={8}>
             <GradientBackground option="web3">
               <img
                 src="/profile-card.png"
@@ -52,11 +58,16 @@ function Products() {
               />
             </GradientBackground>
           </Grid>
-          <Grid md={6}>
+          <Grid md={6} xs={12}>
             <Typography
-              variant="headline2"
               color="pollockText.heading"
               paragraph
+              sx={{
+                typography: {
+                  sm: "headline2",
+                  xs: "headline3",
+                },
+              }}
             >
               Web3 Experience Design
             </Typography>
@@ -72,7 +83,7 @@ function Products() {
             </Typography>
 
             <Grid container columns={12} columnSpacing={2} rowSpacing={2}>
-              <Grid lg={1}>
+              <Grid md={1} xs={2}>
                 <SvgIcon fontSize="large">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +103,7 @@ function Products() {
                   </svg>
                 </SvgIcon>
               </Grid>
-              <Grid lg={11}>
+              <Grid md={11} xs={10}>
                 <Typography
                   variant="headline4"
                   color="pollockText.heading"
@@ -110,7 +121,7 @@ function Products() {
                 </Typography>
               </Grid>
 
-              <Grid lg={1}>
+              <Grid md={1} xs={2}>
                 <SvgIcon fontSize="large">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +145,7 @@ function Products() {
                   </svg>
                 </SvgIcon>
               </Grid>
-              <Grid lg={11}>
+              <Grid md={11} xs={10}>
                 <Typography
                   variant="headline4"
                   color="pollockText.heading"
@@ -152,7 +163,7 @@ function Products() {
                 </Typography>
               </Grid>
 
-              <Grid lg={1}>
+              <Grid md={1} xs={2}>
                 <SvgIcon fontSize="large">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +183,7 @@ function Products() {
                   </svg>
                 </SvgIcon>
               </Grid>
-              <Grid lg={11}>
+              <Grid md={11} xs={10}>
                 <Typography
                   variant="headline4"
                   color="pollockText.heading"
@@ -194,9 +205,14 @@ function Products() {
 
           <Grid md={6}>
             <Typography
-              variant="headline2"
               color="pollockText.heading"
               paragraph
+              sx={{
+                typography: {
+                  sm: "headline2",
+                  xs: "headline3",
+                },
+              }}
             >
               We create world-class products
             </Typography>
@@ -217,7 +233,7 @@ function Products() {
               Discover now
             </Button>
           </Grid>
-          <Grid md={6}>
+          <Grid md={6} xs={8}>
             <Box display="flex" justifyContent="flex-end">
               <GradientBackground option="product">
                 <img
@@ -234,7 +250,7 @@ function Products() {
             </Box>
           </Grid>
 
-          <Grid md={6}>
+          <Grid md={6} xs={8}>
             <GradientBackground option="design">
               <img
                 src="gradient-bg2.jpg"
@@ -250,9 +266,14 @@ function Products() {
           </Grid>
           <Grid md={6}>
             <Typography
-              variant="headline2"
               color="pollockText.heading"
               paragraph
+              sx={{
+                typography: {
+                  sm: "headline2",
+                  xs: "headline3",
+                },
+              }}
             >
               UI/UX design and branding agency
             </Typography>

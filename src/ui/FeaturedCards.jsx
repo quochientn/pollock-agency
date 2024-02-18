@@ -4,6 +4,7 @@ import {
   LayersOutlined,
   RocketLaunchOutlined,
 } from "@mui/icons-material";
+
 import StyledCard from "./StyledCard";
 
 const cardsContent = [
@@ -39,7 +40,7 @@ const cardsContent = [
 
 function FeaturedCards() {
   return (
-    <Box display="flex" gap={4}>
+    <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} gap={4}>
       {cardsContent.map((card) => (
         <StyledCard
           key={card.title}
