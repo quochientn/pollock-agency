@@ -75,6 +75,7 @@ function PricingOptions({ annualPrice }) {
     >
       {options.map((option) => (
         <Card
+          key={option.name}
           variant="outlined"
           sx={{
             borderRadius: "1.25rem",
@@ -120,8 +121,8 @@ function PricingOptions({ annualPrice }) {
               </Typography>
 
               <StyledListOptionFeatures>
-                {option.features.map((feature) => (
-                  <li>
+                {option.features.map((feature, i) => (
+                  <li key={i}>
                     <Box display="flex" alignItems="center" gap={1}>
                       <CheckCircleOutline
                         sx={{ color: "pollockAction.blue" }}

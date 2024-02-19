@@ -32,7 +32,12 @@ function FormContact() {
           purpose and place
         </Typography>
 
-        <Box display="flex" gap={10} mt={6}>
+        <Box
+          display="flex"
+          flexDirection={{ md: "row", xs: "column" }}
+          gap={10}
+          mt={6}
+        >
           <Grid
             container
             rowSpacing={3}
@@ -43,7 +48,7 @@ function FormContact() {
               borderRadius: "10px",
             }}
           >
-            <Grid md={12}>
+            <Grid xs={12}>
               <Typography
                 variant="headline4"
                 color="pollockText.heading"
@@ -53,7 +58,7 @@ function FormContact() {
                 Write a comment
               </Typography>
             </Grid>
-            <Grid md={6}>
+            <Grid xs={12} sm={6}>
               <TextField
                 id="name"
                 label="Name"
@@ -64,7 +69,7 @@ function FormContact() {
                 sx={{ backgroundColor: "var(--color-background-white)" }}
               />
             </Grid>
-            <Grid md={6}>
+            <Grid xs={12} sm={6}>
               <TextField
                 id="email"
                 label="Email"
@@ -75,7 +80,7 @@ function FormContact() {
                 sx={{ backgroundColor: "var(--color-background-white)" }}
               />
             </Grid>
-            <Grid md={6}>
+            <Grid xs={12} sm={6}>
               <TextField
                 id="company"
                 label="Company"
@@ -85,7 +90,7 @@ function FormContact() {
                 sx={{ backgroundColor: "var(--color-background-white)" }}
               />
             </Grid>
-            <Grid md={6}>
+            <Grid xs={12} sm={6}>
               <TextField
                 id="phone"
                 label="Phone"
@@ -95,7 +100,7 @@ function FormContact() {
                 sx={{ backgroundColor: "var(--color-background-white)" }}
               />
             </Grid>
-            <Grid md={12}>
+            <Grid xs={12}>
               <TextField
                 id="comment"
                 label="Comment"
@@ -108,7 +113,7 @@ function FormContact() {
                 sx={{ backgroundColor: "var(--color-background-white)" }}
               />
             </Grid>
-            <Grid md={12} textAlign="right">
+            <Grid xs={12} textAlign="right">
               <TextField
                 type="submit"
                 value="submit"

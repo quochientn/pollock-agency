@@ -33,30 +33,29 @@ const questions = [
   },
 ];
 
-function FAQ() {
+function Faq() {
   const [expanded, setExpanded] = useState("question1");
 
   const handleChange = function (panel) {
     return function (e, isExpanded) {
-      console.log(isExpanded);
       setExpanded(isExpanded ? panel : "");
     };
   };
 
   return (
     <Container maxWidth="lg" component="section" sx={{ py: "6rem" }}>
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        gap={6}
-        textAlign="center"
-      >
+      <Box display="flex" flexDirection="column" alignItems="center" gap={6}>
         <Typography
-          variant="display2"
           color="pollockText.heading"
           component="h2"
+          textAlign="center"
           mb={4}
+          sx={{
+            typography: {
+              md: "display2",
+              xs: "display3",
+            },
+          }}
         >
           Creating an online web presence to fit your business
         </Typography>
@@ -105,4 +104,4 @@ function FAQ() {
   );
 }
 
-export default FAQ;
+export default Faq;

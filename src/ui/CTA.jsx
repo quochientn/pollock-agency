@@ -1,6 +1,9 @@
+import { useTheme } from "@emotion/react";
 import { Box, Button, Container, SvgIcon, Typography } from "@mui/material";
 
-function CTA({ title, subTitle, buttonText }) {
+function Cta({ title, subTitle, buttonText }) {
+  const theme = useTheme();
+
   return (
     <Box
       component="section"
@@ -43,6 +46,9 @@ function CTA({ title, subTitle, buttonText }) {
           position: "absolute",
           bottom: 0,
           right: 0,
+          [theme.breakpoints.down("md")]: {
+            display: "none",
+          },
         }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -81,4 +87,4 @@ function CTA({ title, subTitle, buttonText }) {
   );
 }
 
-export default CTA;
+export default Cta;
