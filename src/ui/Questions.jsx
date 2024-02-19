@@ -33,7 +33,7 @@ const questions = [
   },
 ];
 
-function Faq() {
+function Questions() {
   const [expanded, setExpanded] = useState("question1");
 
   const handleChange = function (panel) {
@@ -104,4 +104,4 @@ function Faq() {
   );
 }
 
-export default Faq;
+export default Questions;

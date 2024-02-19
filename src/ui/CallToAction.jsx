@@ -1,7 +1,7 @@
 import { useTheme } from "@emotion/react";
 import { Box, Button, Container, SvgIcon, Typography } from "@mui/material";
 
-function Cta({ title, subTitle, buttonText }) {
+function CallToAction({ title, subTitle, buttonText }) {
   const theme = useTheme();
 
   return (
@@ -87,4 +87,4 @@ function Cta({ title, subTitle, buttonText }) {
   );
 }
 
-export default Cta;
+export default CallToAction;
