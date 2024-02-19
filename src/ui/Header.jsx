@@ -36,7 +36,6 @@ function Header() {
                 display="flex"
                 alignItems="center"
                 justifyContent="space-between"
-                width={{ lg: "72rem", xs: "90%" }}
               >
                 <Logo />
                 <NavMenu />
