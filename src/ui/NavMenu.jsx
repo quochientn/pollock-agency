@@ -1,5 +1,13 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Box, IconButton, styled } from "@mui/material";
+import {
+  Box,
+  Button,
+  Drawer,
+  IconButton,
+  styled,
+  useTheme,
+} from "@mui/material";
 import { MenuOutlined } from "@mui/icons-material";
 
 const pages = [
@@ -15,10 +23,7 @@ const StyledListMenu = styled("ul")`
   display: flex;
   align-items: center;
   gap: 2rem;
-
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
+  padding-left: 0;
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -50,23 +55,55 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 function NavMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+  const theme = useTheme();
+
+  const handleClick = () => {
+    setIsOpen((open) => !open);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <Box component="nav">
-        <StyledListMenu>
+        <StyledListMenu
+          sx={{
+            [theme.breakpoints.down("md")]: {
+              display: "none",
+            },
+          }}
+        >
           {pages.map((page) => (
             <li key={page.name}>
-              <StyledNavLink to={page.path}>{page.name}</StyledNavLink>
+              <StyledNavLink to={page.path} onClick={handleClose}>
+                {page.name}
+              </StyledNavLink>
             </li>
           ))}
         </StyledListMenu>
       </Box>
 
       <Box display={{ md: "none" }}>
-        <IconButton>
+        <IconButton onClick={handleClick}>
           <MenuOutlined sx={{ color: "pollockText.text", fontSize: "2rem" }} />
         </IconButton>
       </Box>
+
+      <Drawer open={isOpen} onClose={handleClose} anchor="right">
+        <Box display="flex" flexDirection="column" gap={2} px={4} my="auto">
+          <StyledListMenu sx={{ flexDirection: "column" }}>
+            {pages.map((page) => (
+              <li key={page.name}>
+                <StyledNavLink to={page.path}>{page.name}</StyledNavLink>
+              </li>
+            ))}
+          </StyledListMenu>
+          <Button variant="buttonBig">Sign up</Button>
+        </Box>
+      </Drawer>
     </>
   );
 }
