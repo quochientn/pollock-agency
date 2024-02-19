@@ -1,4 +1,4 @@
-import { Box, Container, SvgIcon } from "@mui/material";
+import { Box, Container, SvgIcon, useTheme } from "@mui/material";
 
 import Fact from "./Fact";
 
@@ -24,6 +24,8 @@ const factsContent = [
 ];
 
 function Facts() {
+  const theme = useTheme();
+
   return (
     <Box
       bgcolor="pollockBackground.grey"
@@ -32,7 +34,7 @@ function Facts() {
       position="relative"
     >
       <Container maxWidth="lg">
-        <Box display="flex" gap={4}>
+        <Box display="flex" flexDirection={{ sm: "row", xs: "column" }} gap={6}>
           {factsContent.map((fact) => (
             <Fact
               number={fact.number}
@@ -46,7 +48,13 @@ function Facts() {
 
       <SvgIcon
         viewBox="0 0 562 399"
-        sx={{ width: 562, height: 399, position: "absolute", top: 0, right: 0 }}
+        sx={{
+          width: 562,
+          height: 399,
+          position: "absolute",
+          top: 0,
+          right: 0,
+        }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none">
           <g opacity="0.3" filter="url(#filter0_f_328_1308)">
@@ -89,6 +97,9 @@ function Facts() {
           position: "absolute",
           left: "-30%",
           bottom: 0,
+          [theme.breakpoints.down("md")]: {
+            display: "none",
+          },
         }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none">

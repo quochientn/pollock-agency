@@ -16,7 +16,12 @@ function Fact({ number, title, subTitle }) {
         {number}
       </Typography>
 
-      <Typography variant="headline3" color="pollockText.textWhite" paragraph>
+      <Typography
+        variant="headline3"
+        color="pollockText.textWhite"
+        textAlign="center"
+        paragraph
+      >
         {title}
       </Typography>
 
@@ -25,7 +30,7 @@ function Fact({ number, title, subTitle }) {
         color="pollockText.text"
         mt={2}
         mb={0}
-        align="center"
+        textAlign="center"
         paragraph
       >
         {subTitle}
